@@ -14,9 +14,7 @@ def helloWorld():
 def index():
     data = datetime.datetime.now()
     usuarios = ['Jaqueline', 'rute', 'Ewerton', 'Emyle', 'luize']
-    Lista=['https://www.youtube.com/embed/3fP541Qhfd0','https://www.youtube.com/embed/CTIs_RSPr84']
-
     mostrarUsuarios = True
-    return render_template('index.html', dataAtual=data, usuarios=usuarios, mostrarUsuarios=mostrarUsuarios, Lista = Lista)
+    return render_template('index.html', dataAtual=data, usuarios=usuarios, mostrarUsuarios= mostrarUsuariosLista)
 
 #app.run(host='0.0.0.0', port=5000)
